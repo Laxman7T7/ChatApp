@@ -1,15 +1,17 @@
-import { BrowserRouter, HashRouter } from 'react-router'
-import { ThemeProvider } from './contexts/ThemeContext'
-import Router from './Router'
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import ChatBox from "@/components/ChatBox";
 
-const AppRouter = import.meta.env.VITE_USE_HASH_ROUTE === 'true' ? HashRouter : BrowserRouter
+const App: React.FC = () => {
+ return (
+  <div className="min-h-screen bg-muted flex items-center justify-center p-6">
+    <div className="w-full max-w-4xl"> {/* Controls width */}
+      <ChatBox />
+    </div>
+  </div>
+);
 
-export default function App() {
-    return (
-        <ThemeProvider>
-            <AppRouter>
-                <Router />
-            </AppRouter>
-        </ThemeProvider>
-    )
-}
+
+};
+
+export default App;
