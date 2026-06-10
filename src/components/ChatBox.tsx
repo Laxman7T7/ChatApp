@@ -9,7 +9,7 @@ type Message = {
 };
 
 const API_URL =
-  "https://millions-screeching-vultur.mastra.cloud/api/agents/weatherAgent/stream";
+  "Your API KEY";
 
 const headers = {
   "Content-Type": "application/json",
