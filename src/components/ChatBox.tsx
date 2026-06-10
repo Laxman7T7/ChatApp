@@ -116,7 +116,7 @@ return (
       <div className="chat-input-wrapper">
         <input
           className="chat-input"
-          placeholder="Ask something about the weather..."
+          placeholder="Ask something..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
